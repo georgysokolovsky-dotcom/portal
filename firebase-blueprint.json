@@ -1,0 +1,48 @@
+{
+  "collections": {
+    "users": {
+      "documents": {
+        "userId": {
+          "fields": {
+            "name": "string",
+            "email": "string",
+            "role": "string",
+            "level": "string",
+            "field": "string",
+            "createdAt": "timestamp"
+          }
+        }
+      }
+    },
+    "projects": {
+      "documents": {
+        "projectId": {
+          "fields": {
+            "userId": "string",
+            "name": "string",
+            "status": "string",
+            "currentStep": "number",
+            "progress": "number",
+            "createdAt": "timestamp",
+            "updatedAt": "timestamp"
+          },
+          "collections": {
+            "steps": {
+              "documents": {
+                "stepId": {
+                  "fields": {
+                    "stepNumber": "number",
+                    "data": "map",
+                    "aiFeedback": "string",
+                    "mentorComments": "array",
+                    "updatedAt": "timestamp"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

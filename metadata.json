@@ -1,0 +1,6 @@
+{
+  "name": "Heorhii Platform",
+  "description": "Educational platform for helping professionals to develop positioning, target audience, and selling offers with AI support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
